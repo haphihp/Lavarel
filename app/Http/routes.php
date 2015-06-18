@@ -11,10 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home/', function() {
-    return 'Hello home';
-});
+Route::get('/', 'Home\HomeController@actionView');
