@@ -11,4 +11,10 @@
 |
 */
 
-Route::get('/', 'Home\HomeController@actionView');
+Route::get('/', 'Job\JobController@index');
+
+Route::get('view/{id}', 'Job\JobController@view');
+
+Route::get('edit/{id}', 'Job\JobController@edit');
+
+Route::get('create', 'Job\JobController@create');

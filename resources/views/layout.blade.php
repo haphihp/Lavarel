@@ -14,7 +14,7 @@
     <div id="container">
       <div id="header">
         <div class="content">
-          <h1><a href="">
+          <h1><a href="{{ URL::action('Job\JobController@index') }}">
             <img src="{{ URL::asset('images/logo.jpg') }} " alt="Jobeet Job Board" />
           </a></h1>
  
@@ -22,7 +22,7 @@
             <div class="post">
               <h2>Ask for people</h2>
               <div>
-                <a href="">Post a Job</a>
+                <a href="{{ URL::action('Job\JobController@create') }}">Post a Job</a>
               </div>
             </div>
  
@@ -41,7 +41,6 @@
       </div>
  
       <div id="content">
- 
         <div class="content">
             @yield('content')
         </div>
